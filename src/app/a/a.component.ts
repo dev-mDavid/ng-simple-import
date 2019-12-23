@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { BComponent } from '../b/b.component';
+import { cClass } from '../c';
+import { prototype } from 'events';
 
 
 @Component({
@@ -9,19 +11,18 @@ import { BComponent } from '../b/b.component';
 })
 
 export class AComponent implements OnInit {
-  isWorking: BComponent;
 
   constructor() {
     console.log("A works");
-    this.isWorking = new BComponent();
+    BComponent.prototype.bWorks();    
+    cClass.prototype.cWorks();
   }
   
-  allComponents() {
-    return this.isWorking.bWorks();
-  }
+  
   // allComponents()
+  // console.log("What what");
   
   ngOnInit() {
   }
-
+  
 }

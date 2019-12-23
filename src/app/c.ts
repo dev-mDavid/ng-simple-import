@@ -1,2 +1,7 @@
-export class C {
+export class cClass {
+  
+  cWorks() {
+    console.log("C Works");
+  };
+
 }

@@ -1,7 +1,7 @@
-import { C } from './c';
+import { cClass } from './c';
 
-describe('C', () => {
+describe('cClass', () => {
   it('should create an instance', () => {
-    expect(new C()).toBeTruthy();
+    expect(new cClass()).toBeTruthy();
   });
 });

@@ -6,12 +6,13 @@ import { Component } from '@angular/core';
   styleUrls: ['./b.component.sass']
 })
 export class BComponent{
-
-  constructor() {}
-
+  
   bWorks() {
     console.log("B works");
-}
+  }
+  constructor() { }
+
+  
 
     
 }
